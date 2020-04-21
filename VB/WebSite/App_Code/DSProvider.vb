@@ -32,22 +32,52 @@ Public Class DSProvider
 	Private Function CreateData() As List(Of CountryInfo)
 		Dim list As New List(Of CountryInfo)()
 		list.Add(New CountryInfo With {
-			.Name = "USA", .Info = New MedalInfo With {.Gold = 46, .Silver = 37, .Bronze = 38}
+			.Name = "USA",
+			.Info = New MedalInfo With {
+				.Gold = 46,
+				.Silver = 37,
+				.Bronze = 38
+			}
 		})
 		list.Add(New CountryInfo With {
-			.Name = "Britain", .Info = New MedalInfo With {.Gold = 27, .Silver = 23, .Bronze = 17}
+			.Name = "Britain",
+			.Info = New MedalInfo With {
+				.Gold = 27,
+				.Silver = 23,
+				.Bronze = 17
+			}
 		})
 		list.Add(New CountryInfo With {
-			.Name = "China", .Info = New MedalInfo With {.Gold = 26, .Silver = 18, .Bronze = 26}
+			.Name = "China",
+			.Info = New MedalInfo With {
+				.Gold = 26,
+				.Silver = 18,
+				.Bronze = 26
+			}
 		})
 		list.Add(New CountryInfo With {
-			.Name = "Russia", .Info = New MedalInfo With {.Gold = 19, .Silver = 17, .Bronze = 19}
+			.Name = "Russia",
+			.Info = New MedalInfo With {
+				.Gold = 19,
+				.Silver = 17,
+				.Bronze = 19
+			}
 		})
 		list.Add(New CountryInfo With {
-			.Name = "Germany", .Info = New MedalInfo With {.Gold = 17, .Silver = 10, .Bronze = 15}
+			.Name = "Germany",
+			.Info = New MedalInfo With {
+				.Gold = 17,
+				.Silver = 10,
+				.Bronze = 15
+			}
 		})
 		list.Add(New CountryInfo With {
-			.Name = "Japan", .Info = New MedalInfo With {.Gold = 12, .Silver = 8, .Bronze = 21}
+			.Name = "Japan",
+			.Info = New MedalInfo With {
+				.Gold = 12,
+				.Silver = 8,
+				.Bronze = 21
+			}
 		})
 		Return list
 	End Function

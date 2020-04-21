@@ -10,7 +10,12 @@ Partial Public Class _Default
 
 	Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
 		Dim list As IEnumerable(Of CountryInfo) = CountriesDS.Select().Cast(Of CountryInfo)()
-		StatesChart.DataSource = list.Select(Function(obj) New With {Key .Name = obj.Name, Key .Gold = obj.Info.Gold, Key .Silver = obj.Info.Silver, Key .Bronze = obj.Info.Bronze})
+		StatesChart.DataSource = list.Select(Function(obj) New With {
+			Key .Name = obj.Name,
+			Key .Gold = obj.Info.Gold,
+			Key .Silver = obj.Info.Silver,
+			Key .Bronze = obj.Info.Bronze
+		})
 		StatesChart.DataBind()
 	End Sub
 End Class
